@@ -1,6 +1,11 @@
-package guru.springframework.sfgdi.datasource;
+package guru.springframework.sfgdi.config;
 
-public class FakeDataSource {
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ConfigurationProperties("guru")
+public class SfgConfig {
 
     private String userName;
     private String password;
